@@ -1,0 +1,100 @@
+<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raio-X do voto 2026</title>
+<meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Raio-X do voto">
+<meta property="og:title" content="Raio-X do voto 2026: acesso restrito">
+<meta property="og:description" content="Votos por bairro e por escola na capital e no Grande ABC. Acesso com senha.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://Hunter0xone.github.io/raio-x/">
+<link rel="canonical" href="https://Hunter0xone.github.io/raio-x/">
+<meta property="og:image" content="https://Hunter0xone.github.io/raio-x/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:image" content="https://Hunter0xone.github.io/raio-x/og.jpg">
+<meta name="theme-color" content="#f4f4f1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d1d1b'/%3E%3Crect x='12' y='34' width='10' height='18' rx='2' fill='%236da7ec'/%3E%3Crect x='27' y='22' width='10' height='30' rx='2' fill='%233987e5'/%3E%3Crect x='42' y='12' width='10' height='40' rx='2' fill='%23cde2fb'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--papel:#f4f4f1;--tinta:#1d1d1b;--mudo:#5e5d58;--linha:#d6d5ce;--a:#2a78d6;--ruim:#c23b22;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--papel:#151514;--tinta:#efeee9;--mudo:#a8a69e;--linha:#34332f;--a:#3987e5;--ruim:#ef6a52;color-scheme:dark}}
+*{box-sizing:border-box}[hidden]{display:none!important}
+body{margin:0;min-height:100vh;min-height:100dvh;display:grid;place-items:center;background:var(--papel);color:var(--tinta);font:16px/1.5 Archivo,system-ui,sans-serif;padding:28px 16px}
+.caixa{width:100%;max-width:430px}
+.marca{display:flex;align-items:center;gap:10px;font:600 12px "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--mudo)}
+.marca svg{width:30px;height:30px;flex:none}
+h1{font-weight:800;font-stretch:115%;font-size:clamp(30px,8.5vw,42px);line-height:1.02;letter-spacing:-.02em;margin:20px 0 10px;text-wrap:balance}
+.sub{color:var(--mudo);margin:0 0 24px}
+label.t{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
+input[type=password]{width:100%;height:56px;border-radius:14px;border:2px solid var(--tinta);background:transparent;color:var(--tinta);padding:0 16px;font:600 18px "IBM Plex Mono",monospace;letter-spacing:.05em}
+input[type=password]:focus-visible{outline:3px solid var(--a);outline-offset:2px}
+.lembrar{display:flex;align-items:center;gap:8px;margin:12px 0 18px;font-size:14px;color:var(--mudo);cursor:pointer}.lembrar input{width:18px;height:18px;accent-color:var(--tinta)}
+button{width:100%;height:56px;border:0;border-radius:999px;background:var(--tinta);color:var(--papel);font:700 16px Archivo,system-ui,sans-serif;cursor:pointer}button:disabled{opacity:.6;cursor:default}
+.erro{color:var(--ruim);font-weight:700;font-size:14px;margin:12px 0 0}
+.abrindo{display:flex;align-items:center;gap:10px;color:var(--mudo);font-weight:600}
+.abrindo i{width:16px;height:16px;border-radius:50%;border:2.5px solid var(--linha);border-top-color:var(--tinta);animation:g .8s linear infinite}
+@keyframes g{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.abrindo i{animation:none}}
+.rodape{margin-top:30px;font-size:12.5px;color:var(--mudo);border-top:1px solid var(--linha);padding-top:12px}
+</style></head><body>
+<main class="caixa">
+<div class="marca"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="currentColor"/><rect x="12" y="34" width="10" height="18" rx="2" fill="#6da7ec"/><rect x="27" y="22" width="10" height="30" rx="2" fill="#3987e5"/><rect x="42" y="12" width="10" height="40" rx="2" fill="#cde2fb"/></svg>Raio-X do voto · acesso restrito</div>
+<h1>Raio-X do voto 2026</h1>
+<p class="sub">Digite a senha que você recebeu.</p>
+<p class="abrindo" id="abrindo"><i></i>Abrindo…</p>
+<form id="form" hidden autocomplete="on"><input type="text" name="username" value="site" autocomplete="username" hidden>
+<label class="t" for="senha">Senha</label><input id="senha" name="password" type="password" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" required>
+<label class="lembrar"><input type="checkbox" id="lembrar" checked>Lembrar neste aparelho</label>
+<button id="entrar" type="submit">Entrar</button><p class="erro" id="erro" role="alert" hidden></p></form>
+<p class="rodape">Conteúdo criptografado: sem a senha, ninguém consegue ler, nem baixando o arquivo. Dados públicos do TSE, do IBGE e do Transferegov.</p>
+</main>
+<noscript><p style="text-align:center">Para abrir, ative o JavaScript no navegador.</p></noscript>
+<script type="application/octet-stream" id="cofre">UlhDMQPuliyHAj/HAAAAAAAAAAD7t8DY5sIUsSeffrQH5NrMQYwTRh89OvSMyX786/anBkMV337wO4kmFDM+pSUnelaRXV0rRTUqD/5HG8+XH0UPShoXo8fJwBLlaXTz04Q2n1R8nXzXIGu3KDjl9M5ag46Lm4PStn//FRUH+XAJT9l6IQtmAAPyxQJ8YFBdyUmRibUZ4Fwau46H23cl3MO6P7JHQzJn2bpNoIoZCMZlD6rUHrW7armNo50=</script>
+<script id="rxlib">window.RXC = window.RXC || {
+  b64: s => Uint8Array.from(atob(s), c => c.charCodeAt(0)),
+  b64de: u => { let s = ''; for (let i = 0; i < u.length; i += 0x8000) s += String.fromCharCode.apply(null, u.subarray(i, i + 0x8000)); return btoa(s); },
+  async derivar(senha, sal) { const b = await crypto.subtle.importKey('raw', new TextEncoder().encode(senha), 'PBKDF2', false, ['deriveBits']);
+    return new Uint8Array(await crypto.subtle.deriveBits({name: 'PBKDF2', hash: 'SHA-256', salt: sal, iterations: 210000}, b, 512)); },
+  async abrir(buf, k) {
+    if (buf.length < 52 || String.fromCharCode(buf[0], buf[1], buf[2], buf[3]) !== 'RXC1') throw new Error('formato');
+    const iv = buf.slice(4, 20), mac = buf.slice(20, 52), ct = buf.slice(52), dados = new Uint8Array(16 + ct.length); dados.set(iv); dados.set(ct, 16);
+    const hk = await crypto.subtle.importKey('raw', k.slice(32), {name: 'HMAC', hash: 'SHA-256'}, false, ['verify']);
+    if (!await crypto.subtle.verify('HMAC', hk, mac, dados)) throw new Error('senha');
+    const ak = await crypto.subtle.importKey('raw', k.slice(0, 32), {name: 'AES-CTR'}, false, ['decrypt']);
+    const gz = await crypto.subtle.decrypt({name: 'AES-CTR', counter: iv, length: 64}, ak, ct);
+    return new Uint8Array(await new Response(new Blob([gz]).stream().pipeThrough(new DecompressionStream('gzip'))).arrayBuffer()); },
+  guardar(esc, k, lembrar) { const v = RXC.b64de(k); try { sessionStorage.setItem('rx-cofre:' + esc, v); if (lembrar) localStorage.setItem('rx-cofre:' + esc, v); } catch (e) {} },
+  chave(esc) { let v = null; try { v = sessionStorage.getItem('rx-cofre:' + esc) || localStorage.getItem('rx-cofre:' + esc); } catch (e) {} return v ? RXC.b64(v) : null; },
+  sair(esc) { try { sessionStorage.removeItem('rx-cofre:' + esc); localStorage.removeItem('rx-cofre:' + esc); } catch (e) {} },
+  async ler(url, esc) { const k = RXC.chave(esc); if (!k) throw new Error('sem chave'); const r = await fetch(url, {cache: 'no-cache'}); if (!r.ok) throw new Error('HTTP ' + r.status);
+    return RXC.abrir(new Uint8Array(await r.arrayBuffer()), k); }
+};
+</script>
+<script>
+(async () => {
+const ESC = "site", SAL = RXC.b64('5GbN3OuWGry8RiV4BTJe0Q=='), $ = s => document.querySelector(s);
+async function mostrar(k, lembrar) {
+  const html = new TextDecoder().decode(await RXC.abrir(RXC.b64(document.getElementById('cofre').textContent.trim()), k));
+  RXC.guardar(ESC, k, lembrar);
+  try { if (window.goatcounter && goatcounter.count) goatcounter.count({path: 'entrou/' + ESC, title: 'Entrou: ' + ESC, event: true}); } catch (e) {}
+  const rt = '<script>' + document.getElementById('rxlib').textContent + 'window.RX_ESCOPO=' + JSON.stringify(ESC) + ';<\/script>';
+  document.open(); document.write(html.replace(/<head[^>]*>/i, m => m + rt)); document.close();
+}
+const ps = new URLSearchParams(location.hash.slice(1)), kUrl = ps.get('k');
+if (kUrl) { ps.delete('k'); const resto = ps.toString(); history.replaceState(null, '', location.pathname + location.search + (resto ? '#' + resto : '')); }
+const tentar = async (senha, lembrar) => mostrar(await RXC.derivar(senha, SAL), lembrar);
+try {
+  if (kUrl) { await tentar(kUrl, true); return; }
+  const k = RXC.chave(ESC); if (k) { await mostrar(k, false); return; }
+} catch (e) { if (kUrl) { $('#erro').textContent = 'O link de acesso mudou. Peça o link novo ou digite a senha.'; $('#erro').hidden = false; } }
+if (!(window.crypto && crypto.subtle && window.DecompressionStream)) { $('#erro').textContent = 'Este navegador é antigo demais para abrir o painel. Atualize ou use outro navegador.'; $('#erro').hidden = false; }
+$('#abrindo').hidden = true; $('#form').hidden = false; $('#senha').focus();
+$('#form').addEventListener('submit', async ev => { ev.preventDefault(); const b = $('#entrar'); $('#erro').hidden = true; b.disabled = true; b.textContent = 'Abrindo…';
+  try { await tentar($('#senha').value.trim(), $('#lembrar').checked); }
+  catch (e) { $('#erro').textContent = e.message === 'senha' ? 'Senha incorreta. Confira e tente de novo.' : 'Não consegui abrir neste navegador. Atualize o navegador ou tente no computador.';
+    $('#erro').hidden = false; b.disabled = false; b.textContent = 'Entrar'; } });
+})();
+</script>
+
+</body></html>
